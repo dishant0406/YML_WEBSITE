@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Butler";
+  src: url("../public/fonts/Butler_Black.otf");
+}
+
+@font-face {
+  font-family: "Proxima-Bold";
+  src: url("../public/fonts/Proxima_Nova_Bold.otf");
+}
+
+@font-face {
+  font-family: "Proxima-Regular";
+  src: url("../public/fonts/ProximaNova-Regular.otf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-y: hidden;
+}
+
+#well {
+	position: relative;
+	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
