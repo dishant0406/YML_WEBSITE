@@ -18,10 +18,10 @@ function SectionThree() {
             animate={
               inView
                 ? {
-                    x: 0,
-                    opacity: 1,
-                    transition: { duration: 1 },
-                  }
+                  x: 0,
+                  opacity: 1,
+                  transition: { duration: 1 },
+                }
                 : { x: -300, opacity: 0, transition: { duration: 1 } }
             }
             className="w-full h-[35%] text-5xl font-proximaRegular tracking-[0.7rem]"
@@ -34,10 +34,10 @@ function SectionThree() {
             animate={
               inView
                 ? {
-                    x: 0,
-                    opacity: 1,
-                    transition: { duration: 1 },
-                  }
+                  x: 0,
+                  opacity: 1,
+                  transition: { duration: 1 },
+                }
                 : { x: 300, opacity: 0, transition: { duration: 1 } }
             }
             className="w-[60%] h-[50%] text-xl font-proximaRegular flex justify-center items-center"
@@ -47,11 +47,40 @@ function SectionThree() {
             Gretaeffekten multin eftersom till favis.
           </motion.div>
         </div>
+
+
         <div className="h-[70%] w-full flex justify-center items-center">
           <div className="h-[90%] w-[90%] flex justify-between items-center">
             <div className="h-full w-[20%] flex flex-col justify-around items-center">
-              <div className="h-[48%] w-[95%] bg-[#c3c3c3]"></div>
-              <div className="h-[48%] w-[95%] bg-[#a3a3a3]"></div>
+
+              <motion.div initial={{ x: -300, y: -300, opacity: 0 }}
+                animate={
+                  inView
+                    ? {
+                      x: 0,
+                      y: 0,
+                      opacity: 1,
+                      transition: { duration: 1 },
+                    }
+                    : { x: -300, y: -300, opacity: 0, transition: { duration: 1 } }
+                } className="h-[48%] w-[95%] bg-[#c3c3c3]">
+                <img src="https://placeimg.com/300/310/any" alt="img" />
+              </motion.div>
+
+              <motion.div initial={{ x: 200, y: 200, opacity: 0 }}
+                animate={
+                  inView
+                    ? {
+                      x: 0,
+                      y: 0,
+                      opacity: 1,
+                      transition: { duration: 1 },
+                    }
+                    : { x: 200, y: 200, opacity: 0, transition: { duration: 1 } }
+                } className="h-[48%] w-[95%] bg-[#a3a3a3]">
+                  <img src="https://placeimg.com/300/310/any" alt="img" />
+                </motion.div>
+
             </div>
             <div className="h-full w-[20%] flex flex-col justify-around items-center">
               <motion.div
@@ -59,54 +88,105 @@ function SectionThree() {
                 animate={
                   inView
                     ? {
-                        x: 0,
-                        opacity: 1,
-                        transition: { duration: 1 },
-                      }
+                      x: 0,
+                      opacity: 1,
+                      transition: { duration: 1 },
+                    }
                     : { x: -600, opacity: 0, transition: { duration: 1 } }
                 }
                 className="h-[98%] w-[95%] bg-[#d3d2d2]"
-              ></motion.div>
+              >
+                <img src="https://picsum.photos/600/1260" alt="img" />
+              </motion.div>
             </div>
             <div className="h-full w-[40%] flex flex-col justify-around items-center">
               <motion.div
-                initial={{ y: -600, opacity: 0 }}
+                initial={{ y: -300, opacity: 0 }}
                 animate={
                   inView
                     ? {
-                        y: 0,
-                        opacity: 1,
-                        transition: { duration: 1 },
-                      }
-                    : { y: -600, opacity: 0, transition: { duration: 1 } }
+                      y: 0,
+                      opacity: 1,
+                      transition: { duration: 1 },
+                    }
+                    : { y: -300, opacity: 0, transition: { duration: 1 } }
                 }
                 className="h-[48%] w-[97%] bg-[#eeeeee]"
-              ></motion.div>
+              >
+                <img src="https://picsum.photos/500/255" alt="img" />
+              </motion.div>
               <div className="h-[48%] w-[97%] flex justify-between items-center">
                 <motion.div
                   initial={{ x: -600, opacity: 0 }}
                   animate={
                     inView
                       ? {
-                          x: 0,
-                          opacity: 1,
-                          transition: { duration: 1 },
-                        }
+                        x: 0,
+                        opacity: 1,
+                        transition: { duration: 1 },
+                      }
                       : {
-                          x: -600,
+                        x: -600,
 
-                          opacity: 0,
-                          transition: { duration: 1 },
-                        }
+                        opacity: 0,
+                        transition: { duration: 1 },
+                      }
                   }
                   className="w-[49%] h-full bg-[#858585]"
-                ></motion.div>
-                <div className="w-[49%] h-full bg-[#c3c3c3]"></div>
+                >
+                  <img src="https://placeimg.com/300/310/any" alt="img" />
+                </motion.div>
+
+                <motion.div  initial={{ y: 300, opacity: 0 }}
+                  animate={
+                    inView
+                      ? {
+                        y: 0,
+                        opacity: 1,
+                        transition: { duration: 1 },
+                      }
+                      : {
+                        y: 300,
+
+                        opacity: 0,
+                        transition: { duration: 1 },
+                      }
+                  } className="w-[49%] h-full bg-[#c3c3c3]">
+                    <img src="https://placeimg.com/300/310/any" alt="img" />
+                  </motion.div>
+
               </div>
             </div>
             <div className="h-full w-[20%] flex flex-col justify-around items-center">
-              <div className="h-[48%] w-[95%] bg-[#c3c3c3]"></div>
-              <div className="h-[48%] w-[95%] bg-[#a3a3a3]"></div>
+
+              <motion.div initial={{ x: -300, y: -300, opacity: 0 }}
+                animate={
+                  inView
+                    ? {
+                      x: 0,
+                      y: 0,
+                      opacity: 1,
+                      transition: { duration: 1 },
+                    }
+                    : { x: -300, y: -300, opacity: 0, transition: { duration: 1 } }
+                } className="h-[48%] w-[95%] bg-[#c3c3c3]">
+                  <img src="https://placeimg.com/300/310/any" alt="img" />
+                </motion.div>
+
+              <motion.div initial={{ x: 200, y: 200, opacity: 0 }}
+                animate={
+                  inView
+                    ? {
+                      x: 0,
+                      y: 0,
+                      opacity: 1,
+                      transition: { duration: 1 },
+                    }
+                    : { x: 200, y: 200, opacity: 0, transition: { duration: 1 } }
+                } className="h-[48%] w-[95%] bg-[#a3a3a3]">
+                  <img src="https://placeimg.com/300/310/any" alt="img" />
+                </motion.div>
+
             </div>
           </div>
         </div>

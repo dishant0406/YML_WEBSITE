@@ -6,7 +6,7 @@ import DevelopmentIcon from "../../assets/images/Compare_Git.png";
 import MarketingIcon from "../../assets/images/Commercial.png";
 import { useInView } from "react-intersection-observer";
 
-function SectionTwo() {
+function HomeContact() {
   const { ref, inView } = useInView({
     threshold: 0.5,
   });
@@ -28,16 +28,7 @@ function SectionTwo() {
           >
             OUR EXPERTISE
           </motion.div>
-          <motion.div initial={{ y: -700, opacity: 0 }}
-            animate={
-              inView
-                ? {
-                  y: 0,
-                  opacity: 1,
-                  transition: { duration: 1 },
-                }
-                : { y: -700, opacity: 0, transition: { duration: 1 } }
-            } className="w-[7%] border-b-[3px] border-yellow-300"></motion.div>
+          <div className="w-[7%] border-b-[3px] border-yellow-300"></div>
           <div className="h-[90%] w-full flex justify-between">
             <div className="w-[47%] h-full flex justify-end items-center">
               <motion.div
@@ -59,77 +50,26 @@ function SectionTwo() {
                     lånegarderob.
                   </div>
                 </div>
-                <motion.div initial={{ x: 700, opacity: 0 }}
-                  animate={
-                    inView
-                      ? {
-                        x: 0,
-                        opacity: 1,
-                        transition: { duration: 1 },
-                      }
-                      : { x: 700, opacity: 0, transition: { duration: 1 } }
-                  } className="h-[85%] w-[20%]">
+                <div className="h-[85%] w-[20%]">
                   <div className="h-[40%] w-[90%] border-t-[2px] "></div>
                   <div className="h-[60%] w-[40%] border-t-[2px] border-yellow-300"></div>
-                </motion.div>
+                </div>
               </motion.div>
             </div>
-
-
-
-
             <div className="w-[3%] h-[85%] pt-4 flex flex-col justify-around items-center">
-              <motion.div initial={{ y: -700, opacity: 0 }}
-                animate={
-                  inView
-                    ? {
-                      y: 0,
-                      opacity: 1,
-                      transition: { duration: 1 },
-                    }
-                    : { y: 700, opacity: 0, transition: { duration: 1 } }
-                } className="w-0 h-[15%] border-r-[2px] border-white">
-              </motion.div>
+              <div className="w-0 h-[15%] border-r-[2px] border-white"></div>
               <div className="w-full h-[8%] flex items-center">
                 <Image alt="Design" src={DesignIcon} />
               </div>
-
-
-              <motion.div initial={{ y: -700, opacity: 0 }}
-                animate={
-                  inView
-                    ? {
-                      y: 0,
-                      opacity: 1,
-                      transition: { duration: 1 },
-                    }
-                    : { y: 700, opacity: 0, transition: { duration: 1 } }
-                } className="w-0 h-[20%] border-r-[2px] border-white">
-              </motion.div>
+              <div className="w-0 h-[20%] border-r-[2px] border-white"></div>
               <div className="w-full h-[8%]  flex items-center">
                 <Image alt="Development" src={DevelopmentIcon} />
               </div>
-
-
-              <motion.div initial={{ y: -700, opacity: 0 }}
-                animate={
-                  inView
-                    ? {
-                      y: 0,
-                      opacity: 1,
-                      transition: { duration: 1 },
-                    }
-                    : { y: 700, opacity: 0, transition: { duration: 1 } }
-                } className="w-0 h-[20%] border-r-[2px] border-white">
-              </motion.div>
+              <div className="w-0 h-[20%] border-r-[2px] border-white"></div>
               <div className="w-full h-[10%]  flex items-start">
                 <Image alt="Marketing" src={MarketingIcon} />
               </div>
             </div>
-
-
-
-
             <div className="w-[47%] h-[97.5%] flex flex-col justify-between items-start">
               <motion.div
                 initial={{ x: 200, opacity: 0 }}
@@ -140,19 +80,10 @@ function SectionTwo() {
                 }
                 className="h-[20%] w-[70%]  mt-[21%] flex items-end"
               >
-                <motion.div initial={{ x: -700, opacity: 0 }}
-                  animate={
-                    inView
-                      ? {
-                        x: 0,
-                        opacity: 1,
-                        transition: { duration: 1 },
-                      }
-                      : { x: -700, opacity: 0, transition: { duration: 1 } }
-                  } className="h-[85%] w-[20%] flex flex-col items-end">
+                <div className="h-[85%] w-[20%] flex flex-col items-end">
                   <div className="h-[40%] w-[90%] border-t-[2px] "></div>
                   <div className="h-[60%] w-[40%] border-t-[2px] border-yellow-300"></div>
-                </motion.div>
+                </div>
 
                 <div className="h-full w-[80%]">
                   <div className="flex justify-start w-full h-[37.5%] text-3xl p-1 font-proximaRegular tracking-[0.35rem] text-right">
@@ -174,19 +105,10 @@ function SectionTwo() {
                 }
                 className="h-[20%] w-[70%] flex items-end mb-[3.5%]"
               >
-                <motion.div initial={{ x: -700, opacity: 0 }}
-                  animate={
-                    inView
-                      ? {
-                        x: 0,
-                        opacity: 1,
-                        transition: { duration: 1 },
-                      }
-                      : { x: -700, opacity: 0, transition: { duration: 1 } }
-                  } className="h-[85%] w-[20%] flex flex-col items-end">
+                <div className="h-[85%] w-[20%] flex flex-col items-end">
                   <div className="h-[40%] w-[90%] border-t-[2px] "></div>
                   <div className="h-[60%] w-[40%] border-t-[2px] border-yellow-300"></div>
-                </motion.div>
+                </div>
 
                 <div className="h-full w-[80%]">
                   <div className="flex justify-start w-full h-[37.5%] text-3xl p-1 font-proximaRegular tracking-[0.35rem] text-right">
@@ -207,4 +129,4 @@ function SectionTwo() {
   );
 }
 
-export default SectionTwo;
+export default HomeContact;

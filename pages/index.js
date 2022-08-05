@@ -11,6 +11,8 @@ import ScrollInitiate from "../components/scroll";
 import SectionThree from "../components/index/SectionThree";
 import SectionFour from "../components/index/SectionFour";
 import Navbar from "../components/index/Navbar";
+import HomeContact from "../components/index/HomeContact";
+import SectionTech from "../components/index/SectionTech";
 
 export default function Home() {
   React.useLayoutEffect(() => {
@@ -36,10 +38,12 @@ export default function Home() {
         className="bg-[#2A2F35] text-white font-butler text-center flex flex-col items-center justify-center"
       >
         <Hero />
+        {/* <HomeContact /> */}
         <SectionOne />
         <SectionTwo />
         <SectionThree />
         <SectionFour />
+        {/* <SectionTech /> */}
       </main>
 
       <footer className="w-screen"></footer>
